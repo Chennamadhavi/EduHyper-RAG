@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Environment variables
+.env
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+
+# Data outputs (keep directories via .gitkeep)
+data/processed/*
+data/chunks/*
+data/knowledge_base/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/chunks/.gitkeep
+!data/knowledge_base/.gitkeep
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+build/
+
+# Secrets
+.env
+.env.*
+
+# Generated databases and vector indexes
+*.db
+*.sqlite
+*.sqlite3
+chroma/
+chroma_db/
+
+# IDE and logs
+.vscode/
+.idea/
+*.log
+
+# Frontend generated files
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+# Keep example environment templates
+!.env.example
+!frontend/.env.example
+
+
+# Uploaded course documents - keep locally, not in Git
+data/**/*.pdf
+data/**/*.PDF

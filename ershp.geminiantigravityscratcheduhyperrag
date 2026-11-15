@@ -1,0 +1,153 @@
+app/views/teacher_dashboard.py:126: trailing whitespace.
+[32m+[m[41m                            [m
+backend/app/api/analytics.py:124: trailing whitespace.
+[32m+[m[32m            SELECT[m[41m [m
+backend/app/api/analytics.py:175: trailing whitespace.
+[32m+[m[32m            SELECT[m[41m [m
+backend/app/api/analytics.py:209: trailing whitespace.
+[32m+[m[32m            SELECT[m[41m [m
+backend/app/api/analytics.py:247: trailing whitespace.
+[32m+[m[32m            SELECT[m[41m [m
+backend/app/api/analytics.py:330: trailing whitespace.
+[32m+[m[32m            SELECT[m[41m [m
+backend/app/api/analytics.py:378: trailing whitespace.
+[32m+[m[32m            SELECT[m[41m [m
+backend/app/api/analytics.py:407: trailing whitespace.
+[32m+[m[32m            SELECT[m[41m [m
+backend/app/api/courses.py:237: new blank line at EOF.
+backend/app/core/security.py:20: trailing whitespace.
+[32m+[m[41m    [m
+backend/app/core/security.py:24: trailing whitespace.
+[32m+[m[41m        [m
+backend/app/core/security.py:30: trailing whitespace.
+[32m+[m[41m    [m
+backend/app/core/security.py:35: trailing whitespace.
+[32m+[m[41m        [m
+backend/app/core/security.py:40: trailing whitespace.
+[32m+[m[41m    [m
+backend/app/core/security.py:52: trailing whitespace.
+[32m+[m[41m    [m
+backend/app/core/security.py:55: trailing whitespace.
+[32m+[m[41m        [m
+frontend/src/index.css:9: trailing whitespace.
+[32m+[m[41m  [m
+frontend/src/pages/LoginPage.tsx:32: trailing whitespace.
+[32m+[m[41m      [m
+frontend/src/types/course.ts:26: new blank line at EOF.
+scripts/run_phase1_preprocessing.py:23: trailing whitespace.
+[32m+[m[41m    [m
+scripts/run_phase1_preprocessing.py:26: trailing whitespace.
+[32m+[m[41m    [m
+scripts/run_phase1_preprocessing.py:29: trailing whitespace.
+[32m+[m[41m    [m
+scripts/run_phase1_preprocessing.py:31: trailing whitespace.
+[32m+[m[41m    [m
+scripts/run_phase1_preprocessing.py:46: trailing whitespace.
+[32m+[m[41m        [m
+src/agents/explanation_agent.py:90: trailing whitespace.
+[32m+[m[41m            [m
+src/config.py:29: trailing whitespace.
+[32m+[m[41m    [m
+src/config.py:37: trailing whitespace.
+[32m+[m[41m    [m
+src/config.py:41: trailing whitespace.
+[32m+[m[41m    [m
+src/config.py:46: trailing whitespace.
+[32m+[m[41m    [m
+src/config.py:50: trailing whitespace.
+[32m+[m[41m    [m
+src/config.py:69: new blank line at EOF.
+src/database/db.py:21: trailing whitespace.
+[32m+[m[41m    [m
+src/database/models.py:112: trailing whitespace.
+[32m+[m[32m            SELECT c.*, u.username as teacher_name[m[41m [m
+src/database/models.py:113: trailing whitespace.
+[32m+[m[32m            FROM courses c[m[41m [m
+src/database/models.py:114: trailing whitespace.
+[32m+[m[32m            JOIN users u ON c.teacher_id = u.id[m[41m [m
+src/database/models.py:170: trailing whitespace.
+[32m+[m[32m            UPDATE documents[m[41m [m
+src/database/models.py:311: trailing whitespace.
+[32m+[m[32m            INSERT INTO qa_history[m[41m [m
+src/database/models.py:377: trailing whitespace.
+[32m+[m[32m            SELECT[m[41m [m
+src/evaluation/hallucination_checker.py:159: trailing whitespace.
+[32m+[m[41m            [m
+src/evaluation/report.py:67: trailing whitespace.
+[32m+[m[41m                [m
+src/evaluation/report.py:189: trailing whitespace.
+[32m+[m[41m                [m
+src/evaluation/report.py:213: trailing whitespace.
+[32m+[m[41m        [m
+src/generation/answer_generator.py:300: trailing whitespace.
+[32m+[m[41m        [m
+src/generation/answer_generator.py:318: new blank line at EOF.
+src/generation/answer_generator_backup.py:154: trailing whitespace.
+[32m+[m[41m        [m
+src/generation/answer_generator_backup.py:301: trailing whitespace.
+[32m+[m[41m        [m
+src/generation/answer_generator_backup.py:319: new blank line at EOF.
+src/hypergraph/query_hypergraph.py:30: trailing whitespace.
+[32m+[m[41m        [m
+src/hypergraph/query_hypergraph.py:162: trailing whitespace.
+[32m+[m[41m        [m
+src/services/document_service.py:294: space before tab in indent.
+[32m+[m[41m    [m		[32mself.preprocessing_pipeline.process_file([m
+src/services/document_service.py:295: space before tab in indent.
+[32m+[m[41m        [m		[32msaved_file_path,[m
+src/services/document_service.py:296: space before tab in indent.
+[32m+[m[41m        [m		[32mdoc_id=clean_doc_id,[m
+src/services/document_service.py:297: space before tab in indent.
+[32m+[m[41m        [m		[32mcourse_id=course_id,[m
+src/services/document_service.py:298: space before tab in indent.
+[32m+[m[41m        [m		[32mteacher_id=uploaded_by,[m
+src/services/document_service.py:299: space before tab in indent.
+[32m+[m[41m    [m		[32m)[m
+src/utils/file_io.py:67: trailing whitespace.
+[32m+[m[41m    [m
+src/utils/logger.py:14: trailing whitespace.
+[32m+[m[41m    [m
+src/utils/logger.py:18: trailing whitespace.
+[32m+[m[41m        [m
+src/utils/logger.py:23: trailing whitespace.
+[32m+[m[41m    [m
+tests/test_evaluation.py:69: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_extraction.py:76: trailing whitespace.
+[32m+[m[41m    [m
+tests/test_extraction.py:88: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_extraction.py:104: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_extraction.py:108: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_extraction.py:112: trailing whitespace.
+[32m+[m[41m            [m
+tests/test_extraction.py:116: trailing whitespace.
+[32m+[m[41m            [m
+tests/test_hallucination.py:18: trailing whitespace.
+[32m+[m[41m    [m
+tests/test_hallucination.py:57: trailing whitespace.
+[32m+[m[41m    [m
+tests/test_preprocessing.py:26: trailing whitespace.
+[32m+[m[41m    [m
+tests/test_preprocessing.py:37: trailing whitespace.
+[32m+[m[41m    [m
+tests/test_preprocessing.py:55: trailing whitespace.
+[32m+[m[41m    [m
+tests/test_preprocessing.py:66: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_preprocessing.py:69: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_preprocessing.py:81: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_preprocessing.py:84: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_preprocessing.py:90: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_preprocessing.py:93: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_retrieval.py:48: trailing whitespace.
+[32m+[m[41m        [m
+tests/test_retrieval.py:63: trailing whitespace.
+[32m+[m[41m        [m
