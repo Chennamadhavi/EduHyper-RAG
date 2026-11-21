@@ -39,7 +39,18 @@ export const LoginPage: React.FC = () => {
         navigate('/student/dashboard', { replace: true });
       }
     } catch (err: any) {
-      const msg = err.response?.data?.detail || 'Authentication failed. Please verify your credentials.';
+      let msg = 'Authentication failed. Please verify your credentials.';
+      if (err.response?.data?.detail) {
+        if (typeof err.response.data.detail === 'string') {
+          msg = err.response.data.detail;
+        } else if (Array.isArray(err.response.data.detail)) {
+          msg = err.response.data.detail
+            .map((d: any) => d.msg || 'Invalid field')
+            .join('; ');
+        }
+      } else if (!err.response) {
+        msg = 'Cannot connect to backend server. Please verify the FastAPI server is running on http://127.0.0.1:8000.';
+      }
       setError(msg);
     } finally {
       setIsSubmitting(false);

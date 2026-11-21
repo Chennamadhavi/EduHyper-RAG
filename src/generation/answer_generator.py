@@ -56,7 +56,7 @@ for example [document_chunk_0001].
 
 10. If a hyperedge is used, reference its actual hyperedge ID.
 
-11. Keep the answer focused on the user's question.
+11. Provide a comprehensive, well-structured educational answer based on the retrieved evidence. If the source material contains specific factors, key principles, classifications, definitions, or examples, include them systematically using bullet points and clear headings so students receive the full educational detail from the source text rather than an overly brief summary.
 
 12. Do not add subject-specific information that is not present in the
 retrieved evidence.

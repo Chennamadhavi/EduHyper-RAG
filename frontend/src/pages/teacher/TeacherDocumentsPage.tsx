@@ -269,18 +269,39 @@ export const TeacherDocumentsPage: React.FC = () => {
             <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700">
               Assign to Course
             </label>
-            <select
-              value={selectedCourseId}
-              onChange={(e) => setSelectedCourseId(e.target.value)}
-              disabled={uploading}
-              className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
-            >
-              {courses.map((c) => (
-                <option key={c.id} value={c.id.toString()}>
-                  {c.course_code} — {c.title}
-                </option>
-              ))}
-            </select>
+            {courses.length === 0 ? (
+              <div className="p-3 rounded-lg bg-amber-50 border border-amber-200 text-xs text-amber-900 space-y-1.5">
+                <div className="flex items-center gap-1.5 font-semibold text-amber-800">
+                  <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
+                  <span>No Courses Found for Your Instructor Account</span>
+                </div>
+                <p className="text-amber-700">
+                  Documents must be assigned to a course. Please create a course under <strong>My Courses</strong> before uploading files.
+                </p>
+                <div className="pt-1">
+                  <a
+                    href="/teacher/courses"
+                    className="inline-flex items-center font-semibold text-blue-600 hover:text-blue-800 underline"
+                  >
+                    Go to Courses &rarr;
+                  </a>
+                </div>
+              </div>
+            ) : (
+              <select
+                value={selectedCourseId}
+                onChange={(e) => setSelectedCourseId(e.target.value)}
+                disabled={uploading}
+                className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+              >
+                <option value="" disabled>-- Select a course --</option>
+                {courses.map((c) => (
+                  <option key={c.id} value={c.id.toString()}>
+                    {c.course_code} — {c.title}
+                  </option>
+                ))}
+              </select>
+            )}
           </div>
 
           {/* File Picker */}
